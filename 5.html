@@ -23,619 +23,145 @@
       margin: 0;
       font-family: 'Quicksand', sans-serif;
     }
-
-    .cardsContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 240px);
-        gap: 26px;
-        place-content: center;
-    }
-
-    .productCard {
-        width: 240px;
-    }
-
-    .productCard img {
-        width: 240px;
-        height: 240PX;
-        border-radius: 20PX;
-        object-fit: cover;
         
-    }
-
-    .productInfo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 12px;
-    }
-
-    .productInfo figure img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .productInfo figure {
-        margin: 0;
-    }
-
-    .productInfo div p:nth-child(1){
-        font-weight: bold;
-        font-size: var(--md);
-        margin-top: 0;
-        margin-bottom: 4px;
-    }
-
-    .productInfo div p:nth-child(2){
-        font-weight: bold;
-        font-size: var(--sm);
-        margin-top: 0;
-        margin-bottom: 0;
-        color: var(--very-light-pink);
-    }
-
-    @media (max-width: 640px) {
-
-        .cardsContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 140px);
-        gap: 26px;}
-
-        .productCard {
-        width: 140px;
-    }
-
-    .productCard img {
-        width: 140px;
-        height: 140PX;
+      .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
         
-    }
+        .formu {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .formu div {
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+
+     
+
+      
+
+        .titulo {
+            font-size: var(--lg);
+            margin-bottom: 36px;
+            text-align: start;
+        }
 
         
-    }
+
+        .label {
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+
+        }
+
+        .clasePasword {
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 4px;
+            height: 30px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 12px;
+
+        }
+
+        .inputT, .inputE, .inputP{
+            margin-bottom: 12px;
+        }
+
+
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formulario div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .botonPrimario {
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+
+
+        }
+
+
+        .boton1 {
+            margin-top: 14px;
+            margin-bottom: 30px;
+        }
+
+        .value {
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin: 8px 0 32px 0;
+        }
+
+        @media (max-width:640px){
+            .formulario{
+                height: 100%;
+                justify-content: space-between;
+            }
+
+            .formu{
+                height: 100%;
+                
+            }
+
+
+
+        }
+
          
     </style>
 </head>
 <body>
-    <section class="mainContainer">
-        <div class="cardsContainer">
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>
-
-            <div class="productCard">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="productImg">
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                <div class="productInfo">
-
-                    <div class="">
-
-                    <p>$120.00</p>
-                    <p>una cibicleta</p> 
-
-                    </div>
-                   
-
-                    <figure>
-                    <img src="icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-
-                </div>
-
-                
-                
-            </div>z
-
+    <div class="login">
+        <div class="formu">
             
             
+            <h1 class="titulo"> mi cuentilla </h1>
+            <form action="/" class="formulario">
+                <div>
+                    <label for="nombre" class="label">nombre</label>
+                    <p class="value">kozmirriz</p>
+
+                    <label for="email" class="label">email</label>
+                    <p class="value">kozmi@gmail.es</p>
+
+                    <label for="pasword" class="label">contrasena</label>
+                    <p class="value">**********</p>
+
+            
+
+
+                </div>
+                
+
+                <input type="submit" value="crea mi rey" class="botonPrimario boton1">
+            </form>
         </div>
-    </section>
 
+    </div>
 
 </body>
 </html>
