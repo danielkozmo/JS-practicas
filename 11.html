@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>kozmito kun</title>
+    <style>
+    :root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+    body{
+    font-family: 'Quicksand', sans-serif;
+}
+.menu{
+    display: none;
+
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.logo{
+    width: 100px;
+}
+.navBarL ul, .navBarR ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.navBarL{
+    display: flex;
+}
+.navBarL ul{
+    margin-left: 12px;
+}
+
+.navBarL ul li a, .navBarR ul li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    
+
+}
+
+.navBarL ul li a:hover, .navBarR ul li a:hover{
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    
+}
+
+.correo{
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+.carrito div{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.carrito{
+    position: relative;
+
+}
+
+@media (max-width:640px){
+    .menu{
+        display: block;
+    }
+    .navBarL ul {
+        display: none;
+    }
+    .correo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <img src="icons/icon_menu.svg" alt="menu" class="menu">
+        <div class="navBarL">
+            <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="">all</a>
+                </li>
+                <li>
+                    <a href="">ropa</a>
+                </li>
+                <li>
+                    <a href="">electronicos</a>
+                </li>
+                <li>
+                    <a href="">futuros</a>
+                </li>
+                <li>
+                    <a href="">jugetes</a>
+                </li>
+                <li>
+                    <a href="">otros</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navBarR">
+            <ul>
+                <li class="correo">kozmi@gmail.es</li>
+            <li class="carrito">
+                <img src="icons/icon_shopping_cart.svg" alt="carrto">
+                <div>2</div>
+            </li>
+            </ul>
+            
+        </div>
+    </nav>
+</body>
+</html>
