@@ -10,16 +10,34 @@ menuHam.addEventListener("click",toggleMenu);
 iconoCarrito.addEventListener("click",toggleCard);
 
 function toggleMenu() {
-    menuMobile.classList.toggle("inactive");    
+    const isMobileMenuClosed = mCarrito.classList.contains('inactive');
+  
+  if (!isMobileMenuClosed) {
+    mCarrito.classList.add('inactive'); 
+  }
+  
+  menuMobile.classList.toggle('inactive');    
 }
 
 function toggleCard() {
-    mCarrito.classList.toggle("inactive");    
+    const isAsideClosed = menuMobile.classList.contains('inactive');
+  
+  if (!isAsideClosed) {
+    menuMobile.classList.add('inactive'); 
+  }
+  
+  mCarrito.classList.toggle('inactive');
+      
 }
 
  function ff() {
-    despliegue.classList.toggle("inactive");    
+    const isAsideClosedd = despliegue.classList.contains('inactive');
+  
+  if (!isAsideClosedd) {
+    mCarrito.classList.add('inactive'); 
+  }
+  
+  despliegue.classList.toggle('inactive');    
 }
-
 
 
