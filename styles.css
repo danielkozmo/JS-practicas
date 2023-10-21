@@ -12,10 +12,15 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
 }
 .inactive{
     display: none;
+    
 }
+
+/* menu*/
+
 .menu{
     display: none;
 
@@ -86,12 +91,14 @@ body{
 
 }
 
+/* despliege del menu*/
+
 .desktopMenu {
     
     cursor: pointer;
     position: absolute;
     background-color: var(--white);
-    top: 65px;
+    top: 57px;
     right: 45px;
     width: 100px;
     height: auto;
@@ -144,6 +151,58 @@ body{
 
 }
 
+/* estilos para menu responsive */
+
+.mobileMenu{
+    padding: 24px;
+    position: absolute;
+    top: 58px;
+    background-color: var(--white);
+    border : 1px solid var(--black);
+   
+}
+
+.mobileMenu a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    
+}
+
+.mobileMenu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+    position: relative;
+
+}
+
+.mobileMenu ul li {
+    margin-bottom: 24px;
+
+}
+
+.mobileMenu .email {
+    font-size: var(--sm);
+    font-weight: 300 ;
+    
+}
+
+.mobileMenu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobileMenu .ingresa {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.mobileMenu ul:last-child {
+    position: absolute;
+    bottom: 0;
+}
+
+
 @media (max-width:640px){
     .menu{
         display: block;
@@ -152,6 +211,15 @@ body{
         display: none;
     }
     .correo{
+        display: none;
+    }
+    .desktopMenu{
+        display: none;
+    }
+}
+
+@media (min-width: 641px){
+    .mobileMenu{
         display: none;
     }
 }
