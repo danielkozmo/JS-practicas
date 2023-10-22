@@ -14,6 +14,7 @@ function toggleMenu() {
   
   if (!isMobileMenuClosed) {
     mCarrito.classList.add('inactive'); 
+    
   }
   
   menuMobile.classList.toggle('inactive');    
@@ -27,17 +28,15 @@ function toggleCard() {
   }
   
   mCarrito.classList.toggle('inactive');
+  despliegue.classList.add('inactive');
+  
       
 }
 
  function ff() {
-    const isAsideClosedd = despliegue.classList.contains('inactive');
   
-  if (!isAsideClosedd) {
-    mCarrito.classList.add('inactive'); 
-  }
-  
-  despliegue.classList.toggle('inactive');    
+  despliegue.classList.toggle('inactive');
+  mCarrito.classList.add('inactive');  
 }
 
 
