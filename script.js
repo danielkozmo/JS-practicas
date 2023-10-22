@@ -4,6 +4,7 @@ const menuHam = document.querySelector(".menu");
 const menuMobile = document.querySelector(".mobileMenu");
 const mCarrito = document.querySelector(".productDetail");
 const iconoCarrito = document.querySelector(".carrito");
+const mainElement = document.querySelector(".mine");
 
 despliegueMenu.addEventListener("click", ff);
 menuHam.addEventListener("click",toggleMenu);
@@ -38,5 +39,31 @@ function toggleCard() {
   despliegue.classList.toggle('inactive');
   mCarrito.classList.add('inactive');  
 }
+
+/*
+function colseMenusClick() {
+
+  const isMobileMenuClosed = menuMobile.classList.contains('inactive');
+  const isDesktopMenuClosed = despliegue.classList.contains('inactive')
+  const isCarritoComprasClosed = mCarrito.classList.contains('inactive');
+  
+  if (isMobileMenuClosed || isDesktopMenuClosed || isCarritoComprasClosed )  {
+
+    menuMobile.classList.add("inactive");
+    despliegue.classList.add("inactive");   
+    mCarrito.classList.add("inactive");
+ 
+  }
+
+}
+
+mainElement.addEventListener('click', colseMenusClick);*/
+
+
+
+
+
+
+
 
 
